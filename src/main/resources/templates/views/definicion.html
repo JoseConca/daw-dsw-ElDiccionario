@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 1 Conv.</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Mostrar la palabra -->
+    <h1 style="color:yellow;" th:text="'[' + ${ultPal.palabra} + ']'">[Palabra]</h1>
+    
+    <!-- Mostrar la definición -->
+    <br>
+    <h3 style="font-style: italic;" th:text="'\'' + ${ultPal.definicion} + '\''">[Definición de la palabra]</h3>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Enlace para volver a buscar -->
+    <div style="text-align: center;">
+        <a href="/index">Volver a Buscar</a>
+    </div>
+    
+</body>
+</html>

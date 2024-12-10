@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 1 Conv.</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <div><p><span>E</span>l <span>D</span>iccionario</p></div>
+    <form class="form1" method="POST" action="buscar">
+           <input type="text" name="palabraABuscar" placeholder="Escribe la palabra que deseas buscar..."/><!--
+        --><input type="submit" value="Buscar"/>
+    </form>
+    <div th:if="${errorCode} == '1'"><p th:text="${msgError}">[Aquí va el mensaje de error]</p></div>
+    <div>	<p th:text="'Búsquedas con éxito: ' + ${busquedas}">[N] Búsquedas con éxito</p>
+</div>
+</body>
+</html>

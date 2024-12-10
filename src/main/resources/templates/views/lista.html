@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 1 Conv.</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <h1>Nueva Palabra Añadida</h1>
+    <br>
+    <h3><span th:text="'[' + ${ultPal.palabra} + ']'">[Palabra]</span>: <span th:text="'[' + ${ultPal.definicion} + ']'">[definición]</span></h3>
+    <br>
+
+    <!-- Mostrar la tabla con todas las palabras -->
+    <table>
+        <caption>Lista de palabras</caption>
+        <tr>
+            <th>Palabra</th>
+            <th>Definición</th>
+        </tr>
+        <!-- Iterar sobre todas las palabras en el diccionario -->
+        <tr th:each="palabra : ${dic.getLista()}">
+            <td th:text="${palabra.palabra}">[palabra]</td>
+            <td th:text="${palabra.definicion}">[definición]</td>
+        </tr>
+    </table>
+
+    <div style="text-align: center;">
+        <a href="/index">Volver a Buscar</a>
+    </div>
+</body>
+</html>

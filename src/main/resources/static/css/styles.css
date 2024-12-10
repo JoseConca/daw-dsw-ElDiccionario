@@ -1,0 +1,199 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(43, 43, 43);
+    min-width: 850px;
+}
+
+body > div:nth-child(1){
+    margin-top: 10%;
+    text-align: center;
+}
+
+body > div:nth-child(1) > p {
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    
+}
+
+body > div:nth-child(1) > p > span{
+    font-weight: bold;
+} 
+
+h3 > span {
+    color: yellow;
+}
+/*Estilos mensaje de error*/
+body > div:nth-child(3){
+    margin-top: 20px;
+    text-align: center;
+}
+
+body > div:nth-child(3) > p {
+    color: rgb(195, 67, 67);
+    font-size: 18px;
+}
+
+/*Estilos a la búsquedas*/
+body > div:nth-child(4), body > div:nth-child(5) {
+    margin-top: 50px;
+    text-align: center;
+}
+
+body > div:nth-child(5) span {
+    color:rgb(203, 203, 95);
+}
+
+body > div:nth-child(4) > p {
+    color: rgb(135, 135, 135);
+    font-size: 28px;
+}
+
+body > div:nth-child(5) > p{
+    color: rgb(135, 135, 135);
+    font-size: 20px;
+}
+
+form.form1 {
+    margin-top: 3%;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form.form1 input[type="text"]{
+    height: 50px;
+    width: 450px;
+    color: rgb(36, 36, 36);
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+ 
+}
+
+form.form1 input[type="submit"]{
+    height: 54px;
+    width: 80px;
+    margin-left: 5px;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+form.form2 {
+    margin-top: 3%;
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form.form2 input[type="text"]{
+    height: 50px;
+    width: 250px;
+    color: rgb(36, 36, 36);
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+ 
+}
+
+form.form2 input[type="text"]:nth-child(1){
+   text-align: center;
+}
+
+form.form2 input[type="text"]:nth-child(2){
+    width: 600px;
+}
+
+form.form2 input[type="submit"]{
+    height: 54px;
+    width: 80px;
+    margin-left: 5px;
+}
+
+/*Estilos a tablas*/
+
+table {
+    width: 800px;
+    border-collapse: solid;
+    border: 1px white solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table caption {
+    background-color: white;
+    color:black;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+table th, table td {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+table th {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+table td {
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+}
+
+h1, h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  
+}
+
+h1.palabra {
+    color: yellow;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 1%;
+}
+
+a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(139, 139, 139);
+}
+
